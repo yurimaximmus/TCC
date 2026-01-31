@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f3e8ff, #fde2f3);
+  color: #333;
+  line-height: 1.7;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: #cdb4f6;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ===== HERO ===== */
+.hero {
+  text-align: center;
+  padding: 80px 25px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #7b4ca0;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ===== MAIN ===== */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: #fff;
+  width: 92%;
+  max-width: 950px;
+  padding: 45px;
+  margin: 35px 0;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  font-size: 2.2rem;
+  color: #a06cd5;
+  margin-bottom: 25px;
+}
+
+.card p {
+  font-size: 1.15rem;
+  margin-bottom: 15px;
+}
+
+/* ===== GRID FUNCIONALIDADES ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.item {
+  background: #f7ecff;
+  padding: 25px;
+  border-radius: 18px;
+  font-size: 1.1rem;
+  min-width: 220px;
+}
+
+.item-center {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* ===== FORM ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+input, textarea {
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  font-size: 1.05rem;
+}
+
+textarea {
+  height: 140px;
+  resize: none;
+}
+
+button {
+  background: #e7a6d9;
+  color: #fff;
+  border: none;
+  padding: 16px;
+  border-radius: 35px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* ===== DESENVOLVEDORES ===== */
+.dev-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.dev-card {
+  background: #f7ecff;
+  padding: 30px 20px;
+  width: 260px;
+  border-radius: 20px;
+}
+
+.dev-avatar {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #d8b4fe, #fbcfe8);
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.3rem;
+}
+
+.dev-card h4 {
+  font-size: 1.2rem;
+  color: #7b4ca0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #cdb4f6;
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+  font-size: 1rem;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .item-center {
+    grid-column: auto;
+  }
+}
